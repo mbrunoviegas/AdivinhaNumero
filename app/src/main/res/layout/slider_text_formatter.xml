@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog">
+
+    <TextView
+        android:id="@+id/txtFormatter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Escolha o tamanho do texto"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFormatter"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/ic_format_size_black_24px" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderFormatter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icTextSize"
+        android:layout_alignEnd="@+id/icTextSize"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="20dp"
+        android:stepSize="1.0"
+        android:valueFrom="1.0"
+        android:valueTo="5.0" />
+
+
+</RelativeLayout>
