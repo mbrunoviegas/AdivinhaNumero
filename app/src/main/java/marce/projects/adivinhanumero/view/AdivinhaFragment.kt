@@ -74,7 +74,6 @@ class AdivinhaFragment : Fragment() {
                 showNewGameButton()
             } else {
                 guessNumber = it
-                Log.i("guessNumber", " $guessNumber")
             }
         }
         viewModel.number.observe(viewLifecycleOwner, observerNumber)
