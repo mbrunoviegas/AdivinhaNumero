@@ -4,7 +4,8 @@
     android:id="@+id/relativeDialog"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background_dialog">
+    android:background="@drawable/background_dialog"
+    android:padding="8dp">
 
     <TextView
         android:id="@+id/txtFormatter"
