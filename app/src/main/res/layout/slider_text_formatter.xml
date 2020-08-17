@@ -13,10 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:text="Escolha o tamanho do texto"
+        android:text="@string/dialog_slider_title"
         android:textColor="@color/colorPrimaryText"
         android:textSize="18sp" />
-
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/icTextSize"
@@ -28,16 +27,8 @@
 
     <com.google.android.material.slider.Slider
         android:id="@+id/sliderFormatter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/MySliderStyle"
         android:layout_alignTop="@id/icTextSize"
-        android:layout_alignEnd="@+id/icTextSize"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="20dp"
-        android:stepSize="1.0"
-        android:valueFrom="1.0"
-        android:valueTo="5.0" />
-
+        android:layout_alignEnd="@+id/icTextSize" />
 
 </RelativeLayout>

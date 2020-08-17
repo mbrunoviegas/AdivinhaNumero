@@ -4,12 +4,12 @@
     <item
         android:id="@+id/formatSize"
         android:icon="@drawable/ic_format_size_24px"
-        android:title="format_size"
+        android:title="@string/format_size_menu"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/colorPallete"
         android:icon="@drawable/ic_palette_24px"
-        android:title="color_palette"
+        android:title="@string/color_palette_menu"
         app:showAsAction="ifRoom" />
 </menu>

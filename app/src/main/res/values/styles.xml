@@ -9,4 +9,41 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Módulo Adivinha -->
+    <style name="MyToolbarStyle">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="title">@string/toolbar_title_adivinha</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+    </style>
+
+    <style name="MyFragmentDisplayStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginBottom">14dp</item>
+    </style>
+
+    <style name="MySliderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:valueFrom">1.0</item>
+        <item name="android:valueTo">5.0</item>
+    </style>
+
+    <style name="MyEditTextNumberStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/digite_o_palpite_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:textColorHint">#727272</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
 </resources>

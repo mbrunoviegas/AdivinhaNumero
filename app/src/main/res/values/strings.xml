@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">AdivinhaNumero</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Módulo Adivinha -->
+    <string name="toolbar_title_adivinha">Qual é o número?</string>
+    <string name="digite_o_palpite_hint">Digite o palpite</string>
+    <string name="btn_enviar_txt">ENVIAR</string>
+    <string name="btn_nova_partida_txt">Nova Partida</string>
+    <string name="count_edt">0/3</string>
+    <string name="dialog_slider_title">Escolha o tamanho do texto</string>
+    <string name="format_size_menu">format_size</string>
+    <string name="color_palette_menu">color_palette</string>
+
 </resources>
