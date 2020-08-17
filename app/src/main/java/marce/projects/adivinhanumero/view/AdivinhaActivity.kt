@@ -1,6 +1,5 @@
 package marce.projects.adivinhanumero.view
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -35,6 +34,7 @@ class AdivinhaActivity : AppCompatActivity() {
 
     private var formatterOption = 1f
     private lateinit var adivinhaFragment: AdivinhaFragment
+    private var actualColor = R.color.colorPrimary
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -102,7 +102,7 @@ class AdivinhaActivity : AppCompatActivity() {
 
     private fun showColorPicker() {
         ColorPickerPopup.Builder(this@AdivinhaActivity)
-            .initialColor(Color.RED)
+            .initialColor(actualColor)
             .enableBrightness(true)
             .enableAlpha(true)
             .okTitle("Confirmar")
@@ -112,6 +112,7 @@ class AdivinhaActivity : AppCompatActivity() {
             .build()
             .show(object : ColorPickerPopup.ColorPickerObserver() {
                 override fun onColorPicked(color: Int) {
+                    actualColor = color
                     adivinhaFragment.setDisplayColor(color)
                 }
             })
