@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp">
 
-            <marce.projects.adivinhanumero.extras.SevenSegmetsCanvas
+            <marce.projects.adivinhanumero.extras.SevenSegmentsCanvas
                 android:id="@+id/digit1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent=".2" />
 
-            <marce.projects.adivinhanumero.extras.SevenSegmetsCanvas
+            <marce.projects.adivinhanumero.extras.SevenSegmentsCanvas
                 android:id="@+id/digit2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 app:layout_constraintTop_toTopOf="@+id/digit1"
                 app:layout_constraintWidth_percent=".2" />
 
-            <marce.projects.adivinhanumero.extras.SevenSegmetsCanvas
+            <marce.projects.adivinhanumero.extras.SevenSegmentsCanvas
                 android:id="@+id/digit3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

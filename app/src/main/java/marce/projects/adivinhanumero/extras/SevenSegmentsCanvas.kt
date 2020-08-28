@@ -9,7 +9,7 @@ import androidx.core.content.ContextCompat
 import marce.projects.adivinhanumero.R
 
 
-class SevenSegmetsCanvas(context: Context, attrs: AttributeSet) : View(context, attrs) {
+class SevenSegmentsCanvas(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
     private var sideWidth: Float = 0f
     private var initialXOffset: Float = 0f
@@ -98,7 +98,6 @@ class SevenSegmetsCanvas(context: Context, attrs: AttributeSet) : View(context, 
                 width = specifiedWidthSize
             }
             MeasureSpec.AT_MOST -> {
-                //Can't be bigger than...
                 width = MAX_WIDTH.coerceAtMost(specifiedWidthSize)
             }
             MeasureSpec.UNSPECIFIED -> {
@@ -111,7 +110,6 @@ class SevenSegmetsCanvas(context: Context, attrs: AttributeSet) : View(context, 
                 height = specifiedHeightSize
             }
             MeasureSpec.AT_MOST -> {
-                //Can't be bigger than...
                 height = (width * 1.31).toInt()
             }
             MeasureSpec.UNSPECIFIED -> {
@@ -121,7 +119,6 @@ class SevenSegmetsCanvas(context: Context, attrs: AttributeSet) : View(context, 
 
         sideWidth = width.coerceAtMost(height) / 3f
 
-        //MUST CALL THIS
         setMeasuredDimension(width, height)
     }
 

@@ -17,19 +17,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import top.defaults.colorpicker.ColorPickerPopup
 
-/**
- * Usei o pattern MVVM para estruturar o projeto
- * A lógica baseia-se em reeber o input do usuário, encaminhá-lo à ViewMoldel para pegar
- * seus digitos utilizando o operador %, então armazenar os digitos em um array, que
- * será enviado para a classe customizada SevenSegmentsCanvas
- * Para o código do display, utilzei a bibliotea de desenho Canvas
- * na classe eu tenho 10 arrays, representos do digito 0 a 9
- * cada array, possui numeros que representam os segmentos de cada digito
- * todos os segmentos sao baseados no segmento 0, que o é centro de toda a criação
- * depois das operações necessárias, chamo o metodo para digitar o numeros
- * que irá analisar o numero atual e verificar qual array devera usar pra desenha o digito
- */
-
 class AdivinhaActivity : AppCompatActivity() {
 
     private var formatterOption = 1f
